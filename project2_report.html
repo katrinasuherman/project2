@@ -135,14 +135,19 @@
           <figcaption>Visualization highlighting the significant emissions drop during COVID-19 using bold color, annotation, and baseline framing.</figcaption>
         </figure>
 
-        <p>Design Decisions, Scores, and Rationale:</p>
+        <p>Design Decisions and Rationale:</p>
         <ul>
-          <li><strong>Bold red line and large downward marker (Score: -1.5)</strong> — Saturated red color (`#D73027`) emphasizes 2020 drop visually and emotionally.</li>
-          <li><strong>Shaded COVID year (Score: -1.0)</strong> — Highlighting 2019.5–2020.5 isolates the pandemic period and guides interpretation.</li>
-          <li><strong>“Pandemic-Induced Drop” annotation box (Score: -1.0)</strong> — Text framing supports pandemic causality subtly without numbers.</li>
-          <li><strong>Pre-COVID baseline band (Score: -1.0)</strong> — Shows a "normal" range that makes 2020 appear exceptional.</li>
-          <li><strong>Truncated y-axis (Score: -2.0)</strong> — Compresses vertical scale to visually exaggerate the magnitude of the dip.</li>
+          <li><strong>Truncated y-axis range (4.4 to 5.8) (Score: -1.5)</strong> — Narrowing the y-axis exaggerates the size of the 2020 drop, making it feel steeper and more dramatic.</li>
+          
+          <li><strong>Highlighted COVID-19 year with shading (Score: 1.0)</strong> — Visually isolates the COVID-19 period, framing it as a distinct disruptive event to draw attention to the emissions decline.</li>
+          
+          <li><strong>Added sloped line from 2019 to 2020 (gray) (Score: -0.5)</strong> — A thick slope guides the viewer's eye downward between 2019 and 2020, emphasizing the rate of drop without being overly aggressive.</li>
+          
+          <li><strong>Placed “Pandemic-Induced Drop” callout (Score: -1.0)</strong> — A narrative label near the 2020 point anchors viewer interpretation without requiring detailed numbers or calculations.</li>
+          
+          <li><strong>Shaded pre-COVID baseline region (Score: 1.0)</strong> — Adds a visual benchmark showing 2015–2019 emissions stability, highlighting how far 2020 emissions deviated from normal.</li>
         </ul>
+        
       </section>
 
       <section>
@@ -153,30 +158,35 @@
           <figcaption>Visualization reframing the data to emphasize a smooth, steady decline over time with minimal visible COVID-19 impact.</figcaption>
         </figure>
 
-        <p>Design Decisions, Scores, and Rationale:</p>
+        <p>Design Decisions and Rationale:</p>
         <ul>
-          <li><strong>Expanded y-axis (4 to 7) (Score: -1.5)</strong> — Flattens year-to-year fluctuations and makes the COVID dip seem insignificant.</li>
-          <li><strong>Added linear regression trend line (Score: -1.0)</strong> — Emphasizes long-term gradual decline rather than short-term disruption.</li>
-          <li><strong>Muted raw data line and small square markers (Score: -1.0)</strong> — Lowers the visual weight of yearly variability, highlighting only trend.</li>
-          <li><strong>Removed gridlines (Score: 0)</strong> — Simplifies the visual background without misleading about data.</li>
-          <li><strong>Narrative framing in subtitle (Score: -0.5)</strong> — Guides viewer’s interpretation toward stability across the COVID period.</li>
+          <li><strong>Muted raw emissions line with light green color and small square markers (Score: -1.0)</strong> — De-emphasizes noisy year-to-year variability by making the annual data less visually dominant. This directs the viewer’s focus onto the smooth long-term trend rather than temporary drops like COVID-19.</li>
+        
+          <li><strong>Added linear regression trend line with dashed styling (Score: -1.0)</strong> — Highlights a consistent downward slope from 2010 to 2022, guiding interpretation toward gradual decrease. Dashed line signals an analytical "fit" rather than raw data, making it feel more statistically justified.</li>
+        
+          <li><strong>Included a 90% confidence interval (Score: +1.0)</strong> — Showing uncertainty is honest and scientifically earnest. The relatively narrow band supports the idea that the trend is stable and not significantly disrupted by COVID-19.</li>
+        
+          <li><strong>Disabled gridlines (Score: 0)</strong> — Simplifies the visual background and makes the trend easier to read. Does not distort or hide any data; purely a clean stylistic decision.</li>
+        
+          <li><strong>Narrative framing in subtitle: "Emissions Decreased Steadily Despite COVID-19 Disruption" (Score: -1.0)</strong> — Actively guides the viewer’s takeaway by priming them to interpret the graph as "steady" even if minor drops exist. Framing language is slightly persuasive but not factually incorrect.</li>
         </ul>
+        
+        
       </section>
 
       <section>
         <h2>Final Reflection</h2>
 
         <p>
-          This project taught me how powerful subtle design choices can be in shaping a viewer’s perception of a dataset without altering the actual numbers.
-          It was straightforward to create a persuasive visualization emphasizing the 2020 drop because there were many visual levers available (color, annotation, axis scaling).
-          The more difficult part was designing an opposing view that downplayed the same drop while remaining visually clean and plausible.
+          The process of creating the opposing and supporting visuals proved to be fairly complex.  Making simple line plots to display the trend of methane emissions over time first appeared to be simple.  Adjusting axis ranges, changing color intensity, highlighting particular time periods like COVID-19, and carefully choosing annotations were some of the ways I improved the visual strategy and gained an understanding of how small design choices can have a significant impact on perception.  The story being told could be drastically changed by even small adjustments, such as removing the pre-COVID baseline or reducing the y-axis range.  The most difficult part was finding the right balance between clarity and persuasion in order to lead the audience without drawing too much attention to the underlying manipulation.
         </p>
 
         <p>
-          I was surprised by how much small details — such as gridlines, marker size, or line opacity — could steer interpretation.
-          Ethical analysis and visualization, in my view, involves using design choices intentionally while being transparent about what is being emphasized.
-          Acceptable persuasive choices guide the reader’s attention but do not fabricate or mislead about the core data itself. Misleading choices, in contrast, fundamentally obscure, delete, or falsify important information.
-          Through this assignment, I now see how ethical visualization lies in that delicate balance between expression and distortion.
+          The most difficult thing for me to fully comprehend was how hard it is to distinguish between deceitful and ethical vision.  When applied clearly, several strategies—such as emphasizing relevant time periods or including contextual baselines—actually improve comprehension.  However, some decisions can easily go into deceptive terrain, such as aggressively truncating axes or structuring titles to indicate causality without supporting evidence.  Decisions that improve clarity and facilitate readers' interpretation without concealing or warping basic patterns, in my experience, feel appropriate.  On the other hand, even if a choice is technically correct, it feels misleading if it overstates minor changes or hides the full scope of the data.
+        </p>
+
+        <p>
+          The process of accurately identifying significant patterns in data without changing or distorting them constitutes what I classify as ethical analysis and visualization. While it is ethical to apply persuasive strategies such as framing, zooming, or selective emphasis to guide interpretation, it is unethical to remove, conceal, or create data in ways that fundamentally alter the viewer's understanding. Visualizations that are ethical must highlight without misrepresenting, explain without deceiving, and stay grounded in the facts. Removing unpleasant data points or creating new trends erodes credibility and turns a visualization from a compelling narrative into intentional disinformation. 
         </p>
       </section>
     </main>
